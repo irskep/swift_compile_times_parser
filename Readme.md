@@ -1,4 +1,4 @@
-This script parses and aggregated Swift function body compile times from an
+This script parses and aggregates Swift function body compile times from an
 Xcode build log. It can either print errors/warnings that Xcode will pick up
 from a Run Script build step, or tell you your worst N blocks.
 
