@@ -38,8 +38,14 @@ Run Script phase like this:
     # report all function body compile times >500ms as an error
     /path/to/parse_swift_compile_times.py --max-time=500 $LOG_PATH
 
+    # save script return code
+    e=$?
+
     # remove temp file
     rm $LOG_PATH
+
+    # exit with script's return code, which will be 1 if there were errors
+    exit $e
 """
 
 from __future__ import print_function
